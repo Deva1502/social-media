@@ -22,9 +22,9 @@ export const registerUser = async (req, res) => {
       if(!gender){
         return res.status(400).json({ message: "Gender is required" });
       }
-      if(!file){
-        return res.status(400).json({ message: "Profile picture is required" });
-      }
+      // if(!file){
+      //   return res.status(400).json({ message: "Profile picture is required" });
+      // }
       
     }
     let user = await User.findOne({ email });
